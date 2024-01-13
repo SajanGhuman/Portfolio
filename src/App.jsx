@@ -7,6 +7,7 @@ import Projects from "./components/projects.jsx";
 import Hero from "./components/hero.jsx";
 import Resume from "./components/resume.jsx";
 import Contact from "./components/contact.jsx";
+import About from "./components/about.jsx";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/projects" element={<Projects />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </Router>
       ;

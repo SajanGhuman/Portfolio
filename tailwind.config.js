@@ -15,8 +15,8 @@ module.exports = {
         "custom-off-black": "#1E293B",
         "custom-off-black-1": "#34445e",
         "custom-rose": "#e11d48",
-        "custom-white": "#f1f5f9"
-
+        "custom-white": "#f1f5f9",
+        "custom-purple": "#5146E3",
       },
       screens: {
         "x-sm": "375px",
