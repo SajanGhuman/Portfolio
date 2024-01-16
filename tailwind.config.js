@@ -19,6 +19,7 @@ module.exports = {
         "custom-purple": "#5146E3",
       },
       screens: {
+        "no": "0px",
         "x-sm": "375px",
         "400-sm": "400px",
         "420-sm": "420px",

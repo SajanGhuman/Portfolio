@@ -13,13 +13,13 @@ const Nav = () => {
     <div className="absolute text-white right-[100px] top-[10px]">
       <div
         onClick={() => setNav(!nav)}
-        className="flex flex-col gap-2 relative left-[80px] top-3 x-sm:flex sm:hidden z-20"
+        className="flex flex-col gap-2 relative left-[125px] top-3 x-sm:flex sm:hidden z-20"
       >
         <div
           className={
             nav === true
               ? `bg-white w-[50px] h-[5px] rounded transition-all`
-              : `bg-custom-off-white w-[50px] h-[5px] rounded rotate-[45deg] translate-y-[12px] translate-x-[42px] duration-500`
+              : `bg-custom-off-white w-[50px] h-[5px] rounded rotate-[45deg] translate-y-[12px] translate-x-[10px] duration-500`
           }
         ></div>
         <div
@@ -33,7 +33,7 @@ const Nav = () => {
           className={
             nav === true
               ? `bg-white w-[50px] h-[5px] rounded transition-all `
-              : `bg-custom-off-white w-[50px] h-[5px] rounded rotate-[-45deg] translate-y-[-12px] translate-x-[42px] duration-700`
+              : `bg-custom-off-white w-[50px] h-[5px] rounded rotate-[-45deg] translate-y-[-12px] translate-x-[10px] duration-700`
           }
         ></div>
       </div>
@@ -41,7 +41,7 @@ const Nav = () => {
       <ul
         className={
           nav
-            ? `flex gap-8 text-custom-off-black-1 z-30 text-[20px] font-bold transition-all duration-[500] x-sm:flex-col x-sm:relative x-sm:left-[1000px] x-sm:top-[40px] x-sm:justify-center sm:flex sm:flex-row sm:left-[40px] sm:top-[40px]`
+            ? `flex gap-8 text-custom-off-black-1 z-30 text-[20px] font-bold transition-all duration-[500] no:flex-col no:relative no:left-[1000px] no:top-[40px] no  :justify-center sm:flex sm:flex-row sm:left-[40px] sm:top-[40px]`
             : `flex gap-8 text-custom-off-black-1 z-30 text-[20px] font-bold transition-all duration-[500] x-sm:flex-col x-sm:relative x-sm:left-[60px] x-sm:top-[40px] x-sm:justify-center sm:flex sm:flex-row `
         }
       >
