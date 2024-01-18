@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import HeroImage from "./heroImage.jsx";
 import Nav from "./nav.jsx";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Projects from "./projects.jsx";
@@ -9,6 +8,11 @@ import About from "./about.jsx";
 const Hero = () => {
   return (
     <div className="overflow-hidden">
+      <Link to={"/"}>
+        <h1 className="text-white text-[20px]  absolute left-5 top-5">
+          @SajanGhuman
+        </h1>
+      </Link>
       <div
         className="flex justify-center items-center bg-custom-gray max-w-[100vw] w-[100vw] h-[100vh] overflow-x-hidden"
         // onMouseEnter={mouseEnter}
@@ -16,7 +20,7 @@ const Hero = () => {
       >
         <Nav />
         {/* <HeroImage /> */}
-        <div className="flex flex-col gap-5 justify-center items-center text-center">
+        <div className="flex flex-col gap-5 justify-center items-center text-center select-none">
           <h2 className="relative text-custom-off-white text-center font-general_sans whitespace-nowrap x-sm:text-[30px] sm:text-[40px] lg:text-[50px] 2xl:text-[70px]">
             Hi,I am Sajan👋
           </h2>
@@ -35,7 +39,7 @@ const Hero = () => {
       <About />
       <div className="bg-custom-gray h-[20vh] w-[100vw]"></div>
       <Projects />
-      <div className="bg-custom-gray h-[100vh] w-[100vw]"></div>
+      <div className="bg-custom-gray x-sm:h-[120vh] 500-sm:h-[130vh] md:h-[180vh] sm:h-[140vh] lg:h-[80vh] xl:h-[80vh]"></div>
     </div>
   );
 };

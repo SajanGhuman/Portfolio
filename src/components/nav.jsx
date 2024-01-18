@@ -10,7 +10,7 @@ const Nav = () => {
   const onStyles = "bg-custom-gray w-[50px] h-[5px] rounded";
 
   return (
-    <div className="absolute text-white right-[100px] top-[10px]">
+    <div className="select-none absolute text-white right-[100px] top-[10px]">
       <div
         onClick={() => setNav(!nav)}
         className="flex flex-col gap-2 relative left-[125px] top-3 x-sm:flex sm:hidden z-20"
@@ -45,6 +45,11 @@ const Nav = () => {
             : `flex gap-8 text-custom-off-black-1 z-30 text-[20px] font-bold transition-all duration-[500] x-sm:flex-col x-sm:relative x-sm:left-[60px] x-sm:top-[40px] x-sm:justify-center sm:flex sm:flex-row `
         }
       >
+        {/* <ScrollLink to="about" smooth={true} duration={500}>
+          <li className=" hover:text-red-500 hover:translate-y-[-2px] transition-all duration-500 cursor-pointer">
+            Stack Used
+          </li>
+        </ScrollLink> */}
         <ScrollLink to="about" smooth={true} duration={500}>
           <li className=" hover:text-red-500 hover:translate-y-[-2px] transition-all duration-500 cursor-pointer">
             About me
@@ -56,7 +61,7 @@ const Nav = () => {
           </li>
         </Link> */}
         <li className=" hover:text-red-500 hover:translate-y-[-2px] transition-all duration-500 cursor-pointer">
-          <ScrollLink to="projects" smooth={true} duration={500}>
+          <ScrollLink to="projects" smooth={true} duration={500} offset={200}>
             <button className="inline-block font-semibold tracking-[-0.05rem] bg-custom-rose text-custom-white px-[1rem] rounded-[6px] no-underline shadow-button-shadow  ">
               Projects
             </button>

@@ -17,9 +17,10 @@ module.exports = {
         "custom-rose": "#e11d48",
         "custom-white": "#f1f5f9",
         "custom-purple": "#5146E3",
+        "custom-grey": "#2B2B2B",
       },
       screens: {
-        "no": "0px",
+        no: "0px",
         "x-sm": "375px",
         "400-sm": "400px",
         "420-sm": "420px",
@@ -34,6 +35,7 @@ module.exports = {
         "1000-lg": "1000px",
         "1200-lg": "1200px",
         "1300-lg": "1300px",
+        "1442-lg": "1442px",
       },
       maxHeight: {
         "700h": "max-height: 600px",

@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import HeroImage from "./components/heroImage.jsx";
 import Nav from "./components/nav.jsx";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Projects from "./components/projects.jsx";
@@ -21,7 +20,6 @@ const App = () => {
           <Route path="/about" element={<About />} />
         </Routes>
       </Router>
-      ;
     </div>
   );
 };
