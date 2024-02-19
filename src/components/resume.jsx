@@ -12,12 +12,12 @@ const Resume = () => {
       <div className="m-[100px] flex flex-col justify-center overflow-x-hidden items-center w-[100vw] h-[200vh]">
         <div className="flex gap-[200px]">
           <Link to={"/"}>
-            <button className="relative top-[-120px] left-[-10%] w-[100px] h-[40px] bg-custom-rose text-custom-white px-[1rem] rounded-[6px] no-underline shadow-button-shadow">
+            <button className="relative top-[-120px] left-[-10%] w-[100px] h-[40px] text-center  bg-custom-rose text-custom-white px-[1rem] rounded-[6px] no-underline shadow-button-shadow">
               Go Back
             </button>
           </Link>
           <a href="Resume.pdf" download>
-            <button className="relative top-[-120px] left-[0%] w-[100px] h-[40px] bg-custom-rose text-custom-white px-[1rem] rounded-[6px] no-underline shadow-button-shadow">
+            <button className="relative top-[-120px] left-[0%] w-[100px] h-[40px] text-center bg-custom-rose text-custom-white px-[1rem] rounded-[6px] no-underline shadow-button-shadow">
               Downlaod
             </button>
           </a>
@@ -25,7 +25,7 @@ const Resume = () => {
         <iframe
           src="/Resume.pdf"
           frameborder="0"
-          className="relative top-[-100px] w-[50vw] h-[1000px] border-[20px] border-custom-grey rounded-[20px]"
+          className="relative top-[-100px] w-[50vw] h-[1000px] border-[20px] border-custom-grey rounded-[20px] no:hidden sm:block xl:h-[900px]"
         ></iframe>
       </div>
     </div>

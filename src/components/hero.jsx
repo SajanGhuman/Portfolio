@@ -29,11 +29,20 @@ const Hero = () => {
             <br />
             WEB DEVELOPER.
           </h1>
-          <Link to={"/resume"}>
-            <button className="w-[160px] text-[20px] h-[50px] inline-block font-bold tracking-[-0.05rem] bg-custom-rose text-custom-white px-[1rem] rounded-[6px] no-underline shadow-button-shadow">
-              Resume
-            </button>
-          </Link>
+          <div className="xx-sm:block xl:hidden">
+            <a href="Resume.pdf" download>
+              <button className="w-[160px] text-[20px] h-[50px] inline-block font-bold tracking-[-0.05rem] bg-custom-rose text-custom-white px-[1rem] rounded-[6px] no-underline shadow-button-shadow">
+                Resume
+              </button>
+            </a>
+          </div>
+          <div className="no:hidden xl:block">
+            <Link to={"/resume"}>
+              <button className="w-[160px] text-[20px] h-[50px] inline-block font-bold tracking-[-0.05rem] bg-custom-rose text-custom-white px-[1rem] rounded-[6px] no-underline shadow-button-shadow">
+                Resume
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
       <About />
