@@ -26,9 +26,9 @@ const About = () => {
           live on the web.
           <br />
           <br />I started my journey into web development when i first learned
-          html at 14 years old, instantly amazed by the concept of creating
+          html at the age of 14, instantly amazed by the concept of creating
           something which people could acces from anywhere. Since then i have
-          refined my coding abilities and strive to become a{" "}
+          refined my coding abilities and strived to become a{" "}
           <strong className="text-custom-purple">better developer</strong> every
           day.
         </p>

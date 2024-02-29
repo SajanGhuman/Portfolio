@@ -2,6 +2,7 @@ import React from "react";
 
 const Projects = () => {
   return (
+    //Frist Project
     <div
       id="projects"
       className="select-none flex justify-center items-center text-white bg-custom-gray w-[100vw] h-[100vh] font-general_sans"
@@ -9,7 +10,7 @@ const Projects = () => {
       <div className="w-[90vw] h-[90vh] flex flex-col items-center relative x-sm:top-[100px] lg:top-[200px] xl:top-[200px]">
         <h1 className="font-bold text-[50px]">Projects</h1>
         <p className="text-custom-off-white"></p>
-        <div className="flex flex-col relative top-[100px] justify-center items-center gap-[0px] w-[1200px]">
+        <div className="flex flex-col relative top-[100px] justify-center items-center gap-[100px] w-[1200px]">
           <div className="flex flex-col lg:flex-row lg:gap-[30px] justify-center items-center relative">
             <img
               src="images/cubespace/1.png"
@@ -44,17 +45,54 @@ const Projects = () => {
               </a>
             </div>
           </div>
+
+          <div
+            className={
+              window.screen.width < 1024
+                ? `relative top-[150px] flex flex-col lg:flex-row lg:gap-[30px] justify-center items-center`
+                : `relative top-[150px] flex flex-col lg:flex-row lg:gap-[30px]  justify-center items-center`
+            }
+          >
+            <img
+              src="images/parks.png"
+              alt=""
+              className="block lg:hidden w-[300px] 500-sm:w-[450px] md:w-[650px] 900-lg:w-[800px] lg:w-[400px]"
+            />
+            <div className="flex flex-col justify-center items-center  relative top-[0px]">
+              <h1 className="text-[40px] font-bold">Winnipeg Parks</h1>
+              <p className="text-custom-off-white w-[300px] text-center 500-sm:w-[480px] 500-sm:text-[21px] md:w-[700px]  900-lg:w-[840px] 900-lg:text-[22px] lg:text-[16px] lg:w-[600px]  xl:w-[850px] xl:text-[22px]">
+                Winnipeg parks used fetch API calls to fetch data from
+                <strong className="text-custom-purple">
+                  {" "}
+                  Winnpeg Open Data Set.{" "}
+                </strong>
+                The user can input the name of any park or its location in
+                winnipeg and instantly get all the results based on the search.
+              </p>
+              <a href="https://winnipegparks.sajanghuman.com/">
+                <button className="relative top-[30px] text-[20px] h-[50px] font-bold tracking-[-0.05rem] bg-custom-rose text-custom-white px-[1rem] rounded-[6px] no-underline shadow-button-shadow">
+                  Website
+                </button>
+              </a>
+            </div>
+            <img
+              src="images/parks.png"
+              alt=""
+              className="hidden lg:block w-[300px] 500-sm:w-[450px] md:w-[650px] 900-lg:w-[800px] lg:w-[400px]"
+            />
+          </div>
+
           <div
             className={
               window.screen.width < 1024
                 ? `relative top-[150px] flex flex-col lg:flex-row lg:gap-[30px] h-[100vh] justify-center items-center`
-                : `relative top-[150px] flex flex-col lg:flex-row lg:gap-[30px]  justify-center items-center`
+                : `relative top-[150px] flex flex-col lg:flex-row lg:gap-[30px] h-[60vh]  justify-center items-center`
             }
           >
             <img
               src="images/coffee.png"
               alt=""
-              className="block lg:hidden w-[300px] 500-sm:w-[450px] md:w-[650px] 900-lg:w-[800px] lg:w-[400px] "
+              className="block 1000lg:hidden w-[300px] 500-sm:w-[450px] md:w-[650px] 900-lg:w-[800px] lg:w-[400px]"
             />
             <div className="flex flex-col justify-center items-center  relative top-[0px]">
               <h1 className="text-[40px] font-bold">Coffee Blogs</h1>
@@ -80,7 +118,7 @@ const Projects = () => {
             <img
               src="images/coffee.png"
               alt=""
-              className="hidden lg:block w-[300px] 500-sm:w-[450px] md:w-[650px] 900-lg:w-[800px] lg:w-[400px]"
+              className="hidden 1000lg:block w-[300px] 500-sm:w-[450px] md:w-[650px] 900-lg:w-[800px] lg:w-[400px]"
             />
           </div>
         </div>

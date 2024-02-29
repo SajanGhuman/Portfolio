@@ -48,7 +48,7 @@ const Hero = () => {
       <About />
       <div className="bg-custom-gray h-[20vh] w-[100vw]"></div>
       <Projects />
-      <div className="bg-custom-gray x-sm:h-[120vh] 500-sm:h-[130vh] md:h-[180vh] sm:h-[140vh] lg:h-[80vh] xl:h-[80vh]"></div>
+      <div className="bg-custom-gray x-sm:h-[220vh] 500-sm:h-[240vh] md:h-[260vh] sm:h-[260vh] lg:h-[100vh] xl:h-[120vh]"></div>
     </div>
   );
 };
