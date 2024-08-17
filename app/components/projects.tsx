@@ -42,9 +42,13 @@ const projects_list = [
   },
 ];
 
-export default function Projects() {
-  const [modal, setModal] = useState({ active: false, index: 0 });
+interface ModalState {
+  active: boolean;
+  index: number;
+}
 
+export default function Projects() {
+  const [modal, setModal] = useState<ModalState>({ active: false, index: 0 });
   return (
     <main
       id="projects"

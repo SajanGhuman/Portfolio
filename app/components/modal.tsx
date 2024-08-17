@@ -4,6 +4,18 @@ import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import Link from "next/link";
 
+interface ModalProps {
+  modal: {
+    active: boolean;
+    index: number;
+  };
+  projects: Array<{
+    src: string;
+    color: string;
+  }>;
+  project_link: string;
+}
+
 const scaleAnimation = {
   initial: { scale: 0, x: "-50%", y: "-50%" },
   enter: {
@@ -20,7 +32,7 @@ const scaleAnimation = {
   },
 };
 
-export default function Modal({ modal, projects, project_link }) {
+export default function Modal({ modal, projects, project_link }: ModalProps) {
   const { active, index } = modal;
 
   const modalContainer = useRef(null);
@@ -58,7 +70,7 @@ export default function Modal({ modal, projects, project_link }) {
       ease: "power3",
     });
 
-    const handleMouseMove = (e) => {
+    const handleMouseMove = (e: MouseEvent) => {
       const { pageX, pageY } = e;
 
       xMoveContainer(pageX);
