@@ -1,12 +1,34 @@
+"use client";
 import Link from "next/link";
-import Navbar from "./components/navbar";
 import Projects from "./components/projects";
 import Button from "./components/button";
-import Footer from "./components/footer";
+import { useEffect, useState } from "react";
+import Preloader from "./components/preloader";
+import Navbar from "./components/navbar";
+import { AnimatePresence } from "framer-motion";
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    (async () => {
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
+      const locomotiveScroll = new LocomotiveScroll();
+
+      setTimeout(() => {
+        setIsLoading(false);
+        document.body.style.cursor = "default";
+        window.scrollTo(0, 0);
+      }, 2000);
+    })();
+  }, []);
+
   return (
     <main className="bg-custom-gray">
+      <AnimatePresence mode="wait">
+        {isLoading && <Preloader />}
+      </AnimatePresence>
+      <Navbar />
       <section
         id="home"
         className="flex flex-col gap-5 justify-center items-center select-none mb-[100px] min-h-screen"

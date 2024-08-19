@@ -40,7 +40,7 @@ const Navbar = () => {
   return (
     <div
       id="nav"
-      className="z-[100] navbar bg-custom-gray w-full h-[50px] flex justify-center fixed top-0 right-0 backdrop-filter backdrop-blur-lg bg-opacity-30 shadow-lg border-b border-white/10"
+      className="navbar bg-custom-gray w-full h-[50px] flex justify-center fixed top-0 right-0 backdrop-filter backdrop-blur-lg bg-opacity-30 shadow-lg border-b border-white/10"
     >
       <img
         src="favicon.png"
