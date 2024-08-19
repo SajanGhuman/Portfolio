@@ -29,3 +29,36 @@
   border-radius: 50%;
   top: 100%;
 }
+
+.cloudText {
+  position: absolute;
+  left: 1px;
+  top: -100px;
+  font-size: 50px;
+  font-weight: bold;
+  color: #e11d48;
+  opacity: 0;
+  transform: translateY(0);
+  transition: opacity 1s, transform 1s;
+}
+
+.cloudTextShow {
+  position: absolute;
+  top: 50px;
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  animation: cloudMove 2s forwards;
+}
+
+@keyframes cloudMove {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}

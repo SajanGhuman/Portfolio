@@ -12,15 +12,15 @@ const projects = [
     src: "minecraft.jpg",
     color: "#5B8B32",
     desc: "Minecraft clone made in Three JS",
-    website_link:
-      "https://www.linkedin.com/posts/sajanghuman_typescript-threejs-gamedevelopment-activity-7228171617271496704-l0-s?utm_source=share&utm_medium=member_desktop",
+    website_link: "https://minecraft.sajanghuman.com/",
   },
   {
     title: "Cubespace",
     src: "cubespace.jpg",
     desc: "Learn rubicks cube algorithms interactively",
     color: "#E1EFC2",
-    website_link: "https://cubespace.sajanghuman.com/",
+    website_link:
+      "https://cube-space-next-ktvu7anxi-sajan-ghumans-projects.vercel.app/",
   },
   {
     title: "Naruto Sensei",
@@ -28,6 +28,34 @@ const projects = [
     desc: "Talk to a 3D AI-powered chatbot about naruto series",
     color: "#FFE182",
     website_link: "https://naruto.sajanghuman.com/",
+  },
+  {
+    title: "Winnipeg Parks",
+    src: "parks.jpg",
+    desc: "Search nearby parks in Winnipeg",
+    color: "#A020F0",
+    website_link: "https://parks.sajanghuman.com/",
+  },
+  {
+    title: "Winnipeg Parks",
+    src: "parks.jpg",
+    desc: "Search nearby parks in Winnipeg",
+    color: "#A020F0",
+    website_link: "https://parks.sajanghuman.com/",
+  },
+  {
+    title: "Winnipeg Parks",
+    src: "parks.jpg",
+    desc: "Search nearby parks in Winnipeg",
+    color: "#A020F0",
+    website_link: "https://parks.sajanghuman.com/",
+  },
+  {
+    title: "Winnipeg Parks",
+    src: "parks.jpg",
+    desc: "Search nearby parks in Winnipeg",
+    color: "#A020F0",
+    website_link: "https://parks.sajanghuman.com/",
   },
   {
     title: "Winnipeg Parks",
