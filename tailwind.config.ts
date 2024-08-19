@@ -28,6 +28,7 @@ const config: Config = {
         "custom-white": "#f1f5f9",
         "custom-purple": "#5146E3",
         "custom-grey": "#2B2B2B",
+        "custom-footer": "#ff5278",
       },
       screens: {
         "x-sm": "375px",

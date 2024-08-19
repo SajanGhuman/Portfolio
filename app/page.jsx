@@ -2,14 +2,14 @@ import Link from "next/link";
 import Navbar from "./components/navbar";
 import Projects from "./components/projects";
 import Button from "./components/button";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
     <main className="bg-custom-gray">
-      <Navbar />
       <section
         id="home"
-        className="flex flex-col gap-5 justify-center items-center select-none mb-[100px] min-h-[100vh]"
+        className="flex flex-col gap-5 justify-center items-center select-none mb-[100px] min-h-screen"
       >
         <h2 className="text-custom-off-white font-bold font-general_sans text-[20px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[80px] 2xl:text-[90px]">
           Hi, I am Sajan 👋

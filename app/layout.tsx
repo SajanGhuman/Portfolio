@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Open_Sans, Roboto_Mono } from "next/font/google";
+import Footer from "./components/footer";
+import Navbar from "./components/navbar";
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -14,7 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="Roboto_Mono.className">{children}</body>
+      <body className="Roboto_Mono.className">
+        <Navbar />
+        {children} <Footer />
+      </body>
     </html>
   );
 }
