@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+html,
+body {
   scroll-behavior: smooth;
+  @apply bg-[#020617];
 }
 
 .main {
@@ -19,4 +21,6 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: "#020617";
+  background-color: "#020617";
 }

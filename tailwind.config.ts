@@ -17,6 +17,8 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
+        "custom-background": "rgb(55, 21, 90)",
+        "custom-border": "#E11D48",
         "custom-gray": "#020617",
         "custom-text": "#BB321C",
         "custom-off-white": "#94A3B8",
@@ -43,6 +45,7 @@ const config: Config = {
         "900-lg": "900px",
         "1000-lg": "1000px",
         "1200-lg": "1200px",
+        "1269-lg": "1269px",
         "1300-lg": "1300px",
         "1442-lg": "1442px",
       },
@@ -55,6 +58,31 @@ const config: Config = {
       boxShadow: {
         "button-shadow":
           "0 10px 20px rgba(225, 29, 72, 0.5), 0 6px 10px rgba(225, 29, 72, 0.5), 0 0 100px -10px #e11d48",
+      },
+      keyframes: {
+        glowingBorder: {
+          "0%": {
+            boxShadow: "0 0 30px #E11D48",
+            borderColor: "#E11D48",
+          },
+          "50%": {
+            boxShadow: "0 0 80px #E11D48",
+            borderColor: "#E11D48",
+          },
+          "100%": {
+            boxShadow: "0 0 30px #E11D48",
+            borderColor: "#E11D48",
+          },
+        },
+      },
+      animation: {
+        glowingBorder: "glowingBorder 2s ease-in-out infinite",
+      },
+      borderRadius: {
+        custom: "100px",
+      },
+      spacing: {
+        offset: "100px",
       },
     },
   },

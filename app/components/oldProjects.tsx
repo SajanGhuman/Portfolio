@@ -3,7 +3,6 @@ import React from "react";
 
 const Projects = () => {
   return (
-    //Frist Project
     <div
       id="projects"
       className="select-none flex justify-center items-center text-white bg-custom-gray w-[100vw] h-[100vh] font-general_sans"

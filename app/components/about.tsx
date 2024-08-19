@@ -1,22 +1,19 @@
 const About = () => {
   return (
-    <div
-      id="about"
-      className="select-none bg-custom-gray text-white font-general_sans min-h-screen w-full flex justify-center items-center"
-    >
-      <div className="w-11/12 max-w-4xl flex flex-col items-center">
-        <h3 className="text-2xl lg:text-3xl xl:text-4xl">About Me</h3>
-        <h1 className="text-4xl font-bold mt-4 xsm:text-3xl lg:text-5xl xl:text-6xl">
+    <div className="bg-white select-none bg-custom-gray text-white font-general_sans w-full h-[900px] flex flex-col items-center justify-center">
+      <div className="w-[600px] flex flex-col items-center">
+        <h3 className="text-[20px] lg:text-[22px]">About Me</h3>
+        <h1 className="text-[28px] lg:text-[32px] font-bold mt-4">
           Introduction.
         </h1>
-        <p className="text-center text-lg text-custom-off-white mt-6 leading-relaxed tracking-wide xsm:text-base xsm:leading-normal sm:text-lg md:w-3/4 xl:w-full xl:text-xl xl:leading-relaxed">
+        <p className="text-center text-[16px] lg:text-[18px] text-custom-off-white mt-6 leading-relaxed tracking-wide">
           A passionate{" "}
           <strong className="text-custom-purple">
             Full Stack Web Developer
           </strong>{" "}
           studying at Red River College in the city of Winnipeg. Major interests
           include coding pixel-perfect web applications. I wake up in the
-          morning, grab a cup of coffee, open up my laptop and start{" "}
+          morning, grab a cup of coffee, open up my laptop, and start{" "}
           <strong className="text-custom-purple">building websites</strong> that
           live on the web.
           <br />
@@ -27,38 +24,50 @@ const About = () => {
           <strong className="text-custom-purple">better developer</strong> every
           day.
         </p>
-        <hr className="my-8 w-full max-w-xl border-custom-off-black" />
-        <h1 className="text-4xl font-bold xsm:text-3xl lg:text-5xl xl:text-6xl">
-          Stack.
-        </h1>
-        <div className="flex flex-wrap justify-center gap-12 mt-6">
+        <hr className="my-8 w-full border-custom-off-black" />
+        <h1 className="text-[28px] lg:text-[32px] font-bold">Stack.</h1>
+        <div className="flex flex-wrap justify-center gap-8 mt-6">
           <div className="flex flex-col items-center">
-            <img src="/tailwind.svg" alt="Tailwind CSS" className="w-16 h-16" />
-            <p className="mt-2 text-lg font-bold">Tailwind CSS</p>
+            <img
+              src="/tailwind.svg"
+              alt="Tailwind CSS"
+              className="w-[48px] h-[48px]"
+            />
+            <p className="mt-2 text-[14px] lg:text-[16px] font-bold">
+              Tailwind CSS
+            </p>
           </div>
           <div className="flex flex-col items-center">
             <img
               src="/typescript.svg"
-              alt="JavaScript"
-              className="w-16 h-16 rounded-full"
+              alt="TypeScript"
+              className="w-[48px] h-[48px] rounded-full"
             />
-            <p className="mt-2 text-lg font-bold">TypeScript</p>
+            <p className="mt-2 text-[14px] lg:text-[16px] font-bold">
+              TypeScript
+            </p>
           </div>
           <div className="flex flex-col items-center">
-            <img src="/next.svg" alt="Next.js" className="w-16 h-16" />
-            <p className="mt-2 text-lg font-bold">Next.js</p>
+            <img src="/next.svg" alt="Next.js" className="w-[48px] h-[48px]" />
+            <p className="mt-2 text-[14px] lg:text-[16px] font-bold">Next.js</p>
           </div>
           <div className="flex flex-col items-center">
-            <img src="/supabase.svg" alt="PostgreSQL" className="w-16 h-16" />
-            <p className="mt-2 text-lg font-bold">Supabase</p>
+            <img
+              src="/supabase.svg"
+              alt="Supabase"
+              className="w-[48px] h-[48px]"
+            />
+            <p className="mt-2 text-[14px] lg:text-[16px] font-bold">
+              Supabase
+            </p>
           </div>
           <div className="flex flex-col items-center">
             <img
               src="/nodejs.svg"
               alt="Node.js"
-              className="w-16 h-16 rounded-full"
+              className="w-[48px] h-[48px] rounded-full"
             />
-            <p className="mt-2 text-lg font-bold">Node.js</p>
+            <p className="mt-2 text-[14px] lg:text-[16px] font-bold">Node.js</p>
           </div>
         </div>
       </div>
