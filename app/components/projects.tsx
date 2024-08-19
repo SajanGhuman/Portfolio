@@ -2,11 +2,9 @@
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Project from "../components/project";
-import Modal from "../components/modal";
-import styles from "./style.module.css";
+import Modal from "./modal";
 import Button from "./button";
 import { useRouter } from "next/navigation";
-import { relative } from "path";
 
 const projects = [
   {
@@ -20,7 +18,7 @@ const projects = [
   {
     title: "Cubespace",
     src: "cubespace.jpg",
-    desc: "Learn rubicks cube algortihms interactively",
+    desc: "Learn rubicks cube algorithms interactively",
     color: "#E1EFC2",
     website_link: "https://cubespace.sajanghuman.com/",
   },
@@ -34,7 +32,7 @@ const projects = [
   {
     title: "Winnipeg Parks",
     src: "parks.jpg",
-    desc: "Seach nearby parks in winipeg",
+    desc: "Search nearby parks in Winnipeg",
     color: "#A020F0",
     website_link: "https://parks.sajanghuman.com/",
   },
@@ -45,21 +43,15 @@ export default function Projects() {
   const pathname = usePathname();
   const router = useRouter();
 
-  console.log(pathname);
   return (
-    <main
-      className={
-        pathname === "/"
-          ? `${styles.main} 1200-sm:mt-0 900-lg:-lg:mt-[500px] mt-[1000px] mb-[500px]`
-          : `${styles.main}  900-lg:mt-[300px] 500-sm:mt[0px] 700-sm:mt-[500px] mt-[700px] mb-[500px]`
-      }
-    >
-      <div className={styles.body}>
+    <main className={`${pathname === "/" ? "" : ""}`}>
+      <div className="flex flex-col items-center justify-center ">
         {projects.map((project, index) => {
           return (
             <Project
               index={index}
               title={project.title}
+              src={project.src}
               setModal={setModal}
               key={index}
               pathname={pathname}
@@ -70,10 +62,10 @@ export default function Projects() {
         })}
         {pathname === "/" && (
           <Button
-            className="relative top-[50px] w-[200px] h-[50px] text-lg font-bold text-custom-white rounded-md border-2 border-custom-border animate-glowingBorder shadow-button-shadow"
+            className="min-w-[15px] text-[15px] font-bold text-custom-white border-2 border-custom-border animate-glowingBorder shadow-button-shadow"
             onClick={() => router.push("/projects")}
           >
-            MORE WORK <sup className="ml-2">{projects.length}</sup>
+            MORE WORK <sup className="ml-1">{projects.length}</sup>
           </Button>
         )}
       </div>

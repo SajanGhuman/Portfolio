@@ -30,8 +30,6 @@ const config: Config = {
         "custom-grey": "#2B2B2B",
       },
       screens: {
-        no: "0px",
-        "xx-sm": "375px",
         "x-sm": "375px",
         "400-sm": "400px",
         "420-sm": "420px",

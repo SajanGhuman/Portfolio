@@ -2,7 +2,6 @@ import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import styles from "./style.module.css";
 
 const scaleAnimation = {
   initial: { scale: 0, x: "-50%", y: "-50%" },
@@ -27,38 +26,35 @@ export default function index({ modal, projects }) {
   const cursorLabel = useRef(null);
 
   useEffect(() => {
-    //Move Container
-
-    let xMoveContainer = gsap.quickTo(modalContainer.current, "left", {
+    // Move Container
+    const xMoveContainer = gsap.quickTo(modalContainer.current, "left", {
       duration: 0.8,
       ease: "power3",
     });
 
-    let yMoveContainer = gsap.quickTo(modalContainer.current, "top", {
+    const yMoveContainer = gsap.quickTo(modalContainer.current, "top", {
       duration: 0.8,
       ease: "power3",
     });
 
-    //Move cursor
-
-    let xMoveCursor = gsap.quickTo(cursor.current, "left", {
+    // Move cursor
+    const xMoveCursor = gsap.quickTo(cursor.current, "left", {
       duration: 0.5,
       ease: "power3",
     });
 
-    let yMoveCursor = gsap.quickTo(cursor.current, "top", {
+    const yMoveCursor = gsap.quickTo(cursor.current, "top", {
       duration: 0.5,
       ease: "power3",
     });
 
-    //Move cursor label
-
-    let xMoveCursorLabel = gsap.quickTo(cursorLabel.current, "left", {
+    // Move cursor label
+    const xMoveCursorLabel = gsap.quickTo(cursorLabel.current, "left", {
       duration: 0.45,
       ease: "power3",
     });
 
-    let yMoveCursorLabel = gsap.quickTo(cursorLabel.current, "top", {
+    const yMoveCursorLabel = gsap.quickTo(cursorLabel.current, "top", {
       duration: 0.45,
       ease: "power3",
     });
@@ -67,15 +63,10 @@ export default function index({ modal, projects }) {
       const { pageX, pageY } = e;
 
       xMoveContainer(pageX);
-
       yMoveContainer(pageY);
-
       xMoveCursor(pageX);
-
       yMoveCursor(pageY);
-
       xMoveCursorLabel(pageX);
-
       yMoveCursorLabel(pageY);
     });
   }, []);
@@ -87,15 +78,17 @@ export default function index({ modal, projects }) {
         variants={scaleAnimation}
         initial="initial"
         animate={active ? "enter" : "closed"}
-        className={styles.modalContainer}
+        className="absolute items-center justify-center h-[300px] w-[400px] bg-white overflow-hidden pointer-events-none hidden lg:flex xl:h-[350px] xl:w-[450px] 2xl:h-[400px] 2xl:w-[500px]"
       >
-        <div style={{ top: index * -100 + "%" }} className={styles.modalSlider}>
-          {" "}
+        <div
+          style={{ top: `${index * -100}%` }}
+          className="absolute h-full w-full transition-[top] duration-[0.5s] ease-[cubic-bezier(0.76,0,0.24,1)]"
+        >
           {projects.map((project, index) => {
             const { src, color } = project;
             return (
               <div
-                className={styles.modal}
+                className="flex items-center justify-center h-full w-full"
                 style={{ backgroundColor: color }}
                 key={`modal_${index}`}
               >
@@ -113,7 +106,7 @@ export default function index({ modal, projects }) {
 
       <motion.div
         ref={cursor}
-        className={styles.cursor}
+        className="absolute z-2 items-center justify-center h-[100px] w-[100px] rounded-full bg-[#455ce9] text-white pointer-events-none hidden lg:flex"
         variants={scaleAnimation}
         initial="initial"
         animate={active ? "enter" : "closed"}
@@ -121,7 +114,7 @@ export default function index({ modal, projects }) {
 
       <motion.div
         ref={cursorLabel}
-        className={styles.cursorLabel}
+        className="absolute z-2 hidden items-center justify-center h-[100px] w-[100px] rounded-full text-white pointer-events-none lg:flex"
         variants={scaleAnimation}
         initial="initial"
         animate={active ? "enter" : "closed"}
