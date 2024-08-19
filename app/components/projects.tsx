@@ -20,7 +20,7 @@ const projects = [
     desc: "Learn rubicks cube algorithms interactively",
     color: "#E1EFC2",
     website_link:
-      "https://cube-space-next-ktvu7anxi-sajan-ghumans-projects.vercel.app/",
+      "https://cube-space-next-js-git-master-sajan-ghumans-projects.vercel.app/",
   },
   {
     title: "Naruto Sensei",
