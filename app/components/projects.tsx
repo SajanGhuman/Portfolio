@@ -36,34 +36,6 @@ const projects = [
     color: "#A020F0",
     website_link: "https://parks.sajanghuman.com/",
   },
-  {
-    title: "Winnipeg Parks",
-    src: "parks.jpg",
-    desc: "Search nearby parks in Winnipeg",
-    color: "#A020F0",
-    website_link: "https://parks.sajanghuman.com/",
-  },
-  {
-    title: "Winnipeg Parks",
-    src: "parks.jpg",
-    desc: "Search nearby parks in Winnipeg",
-    color: "#A020F0",
-    website_link: "https://parks.sajanghuman.com/",
-  },
-  {
-    title: "Winnipeg Parks",
-    src: "parks.jpg",
-    desc: "Search nearby parks in Winnipeg",
-    color: "#A020F0",
-    website_link: "https://parks.sajanghuman.com/",
-  },
-  {
-    title: "Winnipeg Parks",
-    src: "parks.jpg",
-    desc: "Search nearby parks in Winnipeg",
-    color: "#A020F0",
-    website_link: "https://parks.sajanghuman.com/",
-  },
 ];
 
 export default function Projects() {
