@@ -7,7 +7,7 @@ const Navbar = () => {
   const pathname = usePathname();
   const router = useRouter();
 
-  const handleNavigation = (href) => {
+  const handleNavigation = (href: string) => {
     if (pathname === "/projects") {
       router.push(`/`);
     } else {
