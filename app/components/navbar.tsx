@@ -71,7 +71,7 @@ const Navbar = () => {
               onClick={() => handleNavigation("#projects")}
               className="cursor-pointer text-gray-500 hover:text-custom-rose"
             >
-              Projects
+              Work
             </div>
             <span className="absolute left-0 bottom-0 h-[2px] w-full bg-custom-rose transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100 origin-left"></span>
           </div>
