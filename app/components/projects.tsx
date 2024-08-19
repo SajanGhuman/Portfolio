@@ -36,6 +36,13 @@ const projects = [
     color: "#A020F0",
     website_link: "https://parks.sajanghuman.com/",
   },
+  {
+    title: "Tic Tac Toe",
+    src: "tic.png",
+    desc: "Play tic tac toe with friends",
+    color: "#0074A6",
+    website_link: "https://tictac.sajanghuman.com/",
+  },
 ];
 
 export default function Projects() {
