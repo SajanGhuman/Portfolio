@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useRef } from "react";
-import styles from "./style.module.scss";
 import gsap from "gsap";
 import Magnetic from "./magnetic";
 
@@ -43,17 +42,19 @@ export default function Button({
   return (
     <Magnetic>
       <div
-        className={`${styles.roundedButton} ${className},`} // Combine default and additional className
-        style={{ overflow: "hidden" }}
+        className={`relative flex items-center justify-center cursor-pointer overflow-hidden rounded-full border border-pink-600 ${className}`}
+        style={{ padding: "30px" }}
         onMouseEnter={manageMouseEnter}
         onMouseLeave={manageMouseLeave}
         {...attributes}
       >
-        {children}
+        <p className="relative z-20 transition-colors duration-400">
+          {children}
+        </p>
         <div
           ref={circle}
+          className="absolute top-full z-10 h-[150%] w-full rounded-full"
           style={{ backgroundColor }}
-          className={styles.circle}
         ></div>
       </div>
     </Magnetic>

@@ -68,7 +68,7 @@ export default function Projects() {
         })}
         {pathname === "/" && (
           <Button
-            className="mt-[30px] min-w-[15px] text-[15px] font-bold text-custom-white border-2 border-custom-border animate-glowingBorder shadow-button-shadow"
+            className="mt-[30px] min-w-[15px] text-[15px] font-bold hover:text-black text-custom-white border-2 border-custom-border animate-glowingBorder shadow-button-shadow"
             onClick={() => router.push("/projects")}
           >
             MORE WORK <sup className="ml-1">{projects.length}</sup>

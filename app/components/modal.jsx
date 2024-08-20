@@ -78,7 +78,7 @@ export default function index({ modal, projects }) {
         variants={scaleAnimation}
         initial="initial"
         animate={active ? "enter" : "closed"}
-        className="absolute items-center justify-center h-[300px] w-[400px] bg-white overflow-hidden pointer-events-none hidden lg:flex xl:h-[350px] xl:w-[450px] 2xl:h-[400px] 2xl:w-[500px]"
+        className="absolute items-center justify-center h-[300px] w-[400px] bg-white overflow-hidden pointer-events-none hidden lg:flex xl:h-[350px] xl:w-[450px] 2xl:h-[400px] 2xl:w-[500px] z-[3]"
       >
         <div
           style={{ top: `${index * -100}%` }}
@@ -106,7 +106,7 @@ export default function index({ modal, projects }) {
 
       <motion.div
         ref={cursor}
-        className="absolute z-2 items-center justify-center h-[100px] w-[100px] rounded-full bg-[#455ce9] text-white pointer-events-none hidden lg:flex"
+        className="absolute z-2 items-center justify-center h-[100px] w-[100px] rounded-full bg-[#455ce9] text-white pointer-events-none hidden lg:flex z-[3]"
         variants={scaleAnimation}
         initial="initial"
         animate={active ? "enter" : "closed"}
@@ -114,7 +114,7 @@ export default function index({ modal, projects }) {
 
       <motion.div
         ref={cursorLabel}
-        className="absolute z-2 hidden items-center justify-center h-[100px] w-[100px] rounded-full text-white pointer-events-none lg:flex"
+        className="absolute z-2 hidden items-center justify-center h-[100px] w-[100px] rounded-full text-white pointer-events-none lg:flex z-[3]"
         variants={scaleAnimation}
         initial="initial"
         animate={active ? "enter" : "closed"}

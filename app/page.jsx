@@ -42,7 +42,7 @@ export default function Home() {
           WEB DEVELOPER.
         </h1>
         <Link href="#projects">
-          <Button className="min-w-[15px] text-[15px] font-bold text-custom-white border-2 border-custom-border animate-glowingBorder shadow-button-shadow lg:w-[20px]">
+          <Button className="mt-[30px] min-w-[15px] text-[15px] font-bold hover:text-black text-custom-white border-2 border-custom-border animate-glowingBorder shadow-button-shadow">
             WORK
           </Button>
         </Link>
